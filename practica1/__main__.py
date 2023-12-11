@@ -1,8 +1,10 @@
-from practica1 import agent, joc
+from practica1 import agent,agentAestrella,agentProfunditat,agentMinMax, joc
 
 
 def main():
-    quatre = joc.Taulell([agent.Agent("Miquel")])
+    #quatre = joc.Taulell([agentProfunditat.AgentProfunditat("Hugo")])
+    #quatre = joc.Taulell([agentAestrella.AgentAestrella("Hugo")])
+    quatre = joc.Taulell([agentMinMax.AgentMinMax("Hugo"),agentMinMax.AgentMinMax("Pere")])
     quatre.comencar()
 
 
